@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Greeting</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/scoll.css"> -->
+  <link rel="stylesheet" type="text/css" href="/css/header.css">
+  <link rel="stylesheet" type="text/css" href="/css/main_nav.css">
+  <link rel="stylesheet" type="text/css" href="/css/main_slider.css">
+  <link rel="stylesheet" type="text/css" href="/css/main_filter.css">
+  <link rel="stylesheet" type="text/css" href="/css/event.css">
+  <link rel="stylesheet" type="text/css" href="/css/subscribe.css">
+  <link rel="stylesheet" type="text/css" href="/css/sale.css">
+
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <style>
+    
+  @media screen and (max-width: 1080px) { 
+    body { background-color: lightgreen; } 
+  }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="userAccount">
+        <ul>
+          <li><a href="/">로그인</a></li>
+          <li><a href="/">회원가입</a></li>
+          <li><a href="/">쿠폰등록</a></li>
+          <li>
+            <a href="/">고객센터</a>
+            <ul class="userAccount_depth2">
+              <li><a href="/">공지사항</a></li>
+              <li><a href="/">자주하는 질문</a></li>
+              <li><a href="/">1:1 문의</a></li>
+              <li><a href="/">고객의 소리</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="logo">
+        <a href="/"><img src="resource/logo.png" alt="logo"></a>
+      </div>
+    </header>
+    <div class="nav_wrapper">
+      <nav>
+        <div class="gnb depth1">
+          <div>
+              <span class="gnbIcon">
+                <span class="gnbIcon_line"></span>
+                <span class="gnbIcon_line"></span>
+                <span class="gnbIcon_line"></span>
+              </span>
+              <span><a href="/" class="category">카테고리</a></span>
+          </div>
+          <div class="depth2">
+              <div class="menu_1">
+                <a class="menu_title" href="/" >케어식단</a>
+                <ul>
+                  <li>
+                    <a href="/">정기식단</a>
+                    <ul class="depth3">
+                      <li><a href="/">저당식단</a></li>
+                      <li><a href="/">칼로리식단</a></li>
+                      <li><a href="/">장수마을식단</a></li>
+                      <li><a href="/">마이그리팅</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/">챌린지식단</a>
+                    <ul class="depth3">
+                      <li><a href="/">뷰티핏</a></li>
+                      <li><a href="/">키토</a></li>
+                      <li><a href="/">프로틴업</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu_2">
+                <a class="menu_title" href="/" >건강마켓</a>
+                <ul>
+                  <li>
+                    <a href="/">건강반찬</a>
+                    <ul class="depth3">
+                      <li><a href="/">메인요리</a></li>
+                      <li><a href="/">밀키트</a></li>
+                      <li><a href="/">밑반찬</a></li>
+                      <li><a href="/">나물</a></li>
+                      <li><a href="/">면/파스타</a></li>
+                      <li><a href="/">키즈</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/">밥/국</a>
+                    <ul class="depth3">
+                      <li><a href="/">밥</a></li>
+                      <li><a href="/">국</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/">샐러드</a>
+                    <ul class="depth3">
+                      <li><a href="/">350k</a></li>
+                      <li><a href="/">페스토/비건</a></li>
+                      <li><a href="/">단백질</a></li>
+                      <li><a href="/">웨이트</a></li>
+                      <li><a href="/">그랩샐러드</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/">죽/스프</a>
+                    <ul class="depth3">
+                      <li><a href="/">죽</a></li>
+                      <li><a href="/">스프</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/">소스/양념</a>
+                    <ul class="depth3">
+                      <li><a href="/">소금/식초</a></li>
+                      <li><a href="/">기름/오일</a></li>
+                      <li><a href="/">소스/드레싱</a></li>
+                      <li><a href="/">장류</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/">베이커리</a>
+                    <ul class="depth3">
+                      <li><a href="/">빵</a></li>
+                      <li><a href="/">버터/치즈</a></li>
+                      <li><a href="/">잼/시럽</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/">건강음료</a>
+                  </li>
+                  <li>
+                    <a href="/">간편식/간식</a>
+                    <ul class="depth3">
+                      <li><a href="/">식사대용</a></li>
+                      <li><a href="/">커피/차/음료</a></li>
+                      <li><a href="/">캔디/쿠키</a></li>
+                      <li><a href="/">영양간식</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/">연화식</a>
+                    <ul class="depth3">
+                      <li><a href="/">고기</a></li>
+                      <li><a href="/">생선</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/">1Table</a>
+                  </li>
+                  <li>
+                    <a href="/">비건/라이프</a>
+                    <ul class="depth3">
+                      <li><a href="/">비건</a></li>
+                      <li><a href="/">라이프</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/">스페셜 패키지</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu_3">
+                <ul>
+                  <li><a href="/">신상품</a></li>
+                  <li><a href="/">베스트</a></li>
+                </ul>
+              </div>
+          </div>   
+        </div>
+        <ul class="navigation">
+          <li><a href="/">케어식단</a></li>
+          <li><a href="/">건강마켓</a></li>
+          <li><a href="/">기획전</a></li>
+          <li><a href="/">이벤트</a></li>
+          <li><a href="/">스토리</a></li>
+        </ul>
+        <div class="search">
+          <a href="#" class="searchIcon">
+            <img src="resource/iconfinder_search_1608826.png">
+          </a>
+          <a href="#" class="cartIcon">
+            <img src="resource/iconfinder_shopping-cart_2561279.png" alt="cartIcon">
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="main">
+      <section class="mainSlider">
+        <ul class="mainSlider_lists">
+          <li class="mainSlider_list"><a href="/"><img src="resource/mainSlider01.png"></a></li>
+          <li class="mainSlider_list"><a href="/"><img src="resource/mainSlider02.png"></a></li>
+          <li class="mainSlider_list"><a href="/"><img src="resource/mainSlider03.png"></a></li>
+        </ul>
+        <div class="mainSlider_pagination">
+          <input type="checkbox">
+        </div>
+        <div class="mainSlider_buttons">
+          <button type="button" class="mainSlider_prev"></button>
+          <button type="button" class="mainSlider_next"></button>
+        </div>
+      </section>
+      <section class="bestSeller">
+        <p>건강은 밥상으로부터</p>
+        <h2>그리팅이 자신있게 추천드려요</h2>
+        <ul class="bestSeller_filters">
+          <li class="bestSeller_filter" data-id="0001">건강반찬</li>
+          <li class="bestSeller_filter" data-id="0002">밥/국</li>
+          <li class="bestSeller_filter" data-id="0003">샐러드</li>
+          <li class="bestSeller_filter" data-id="0004">죽/스프</li>
+          <li class="bestSeller_filter" data-id="0005">소스/양념</li>
+          <li class="bestSeller_filter" data-id="0006">베이커리</li>
+          <li class="bestSeller_filter" data-id="0007">건강음료</li>
+          <li class="bestSeller_filter" data-id="0008">간편식/간식</li>
+          <li class="bestSeller_filter">연화식</li>
+          <li class="bestSeller_filter">1Table</li>
+          <li class="bestSeller_filter">비건/라이프</li>
+          <li class="bestSeller_filter">스페셜 패키지</li>
+        </ul>
+        <ul class="bestSeller_lists">
+          <li class="list" data-id="0001">
+            <a href="/"><img src="resource/filter01.png"></a>
+            <div class="listTitle">
+              <p>국산콩 100%로 만든 콩비지</p>
+              <h5>목살 듬뿍 비지찌개(2인분)</h5>
+            </div>
+            <div class="listPrice"><span>12,000원</span><a class="cart_PopUp"href="/"></a></div>
+          </li>
+          <li class="list" data-id="0001">
+            <a href="/"><img src="resource/filter02.png"></a>
+            <div class="listTitle">
+              <p>No 설탕, 카라멜색소, MSG</p>
+              <h5>3無 볶음 쟁반 짜장면</h5>
+            </div>
+            <div class="listPrice"><span>6,800원</span><a class="cart_PopUp"href="/"></a></div>
+          </li>
+          <li class="list" data-id="0001">
+            <a href="/"><img src="resource/filter03.png"></a>
+            <div class="listTitle">
+              <p>국내산 재료로 만든 김치</p>
+              <h5>동물복지 돼지고기 듬뿍 김치찌개(2인분)</h5>
+            </div>
+            <div class="listPrice"><span>11,000원</span><a class="cart_PopUp"href="/"></a></div>
+          </li>
+          <li class="list" data-id="0001">
+            <a href="/"><img src="resource/filter04.png"></a>
+            <div class="listTitle">
+              <p>국내산 계란으로 건강하게</p>
+              <h5>계란폭탄 참치&소고기 키토 김밥 키트</h5>
+            </div>
+            <div class="listPrice"><span>11,700원</span><a class="cart_PopUp"href="/"></a></div>
+          </li>
+
+
+
+          <li class="list" data-id="0006">
+            <a href="/"><img src="resource/filter01.png"></a>
+            <div class="listTitle">
+              <p>덴마크에서 온 100년 전통치즈</p>
+              <h5>[ALA] 알라 크림치즈 2종</h5>
+            </div>
+            <div class="listPrice"><span>3,400원</span><a class="cart_PopUp"href="/"></a></div>
+          </li>
+          <li class="list" data-id="0006">
+            <a href="/"><img src="resource/filter02.png"></a>
+            <div class="listTitle">
+              <p>이즈니 버터로 만든 크로와상</p>
+              <h5>[vezzly] 이즈니 미니 크로와상_10개입</h5>
+            </div>
+            <div class="listPrice"><span>10,800원</span><a class="cart_PopUp"href="/"></a></div>
+          </li>
+          <li class="list" data-id="0006">
+            <a href="/"><img src="resource/filter03.png"></a>
+            <div class="listTitle">
+              <p>당일 착유한 우유로 만든</p>
+              <h5>[vezzly] 목장의 하루 우유식빵</h5>
+            </div>
+            <div class="listPrice"><span>4,420원</span><a class="cart_PopUp"href="/"></a></div>
+          </li>
+          <li class="list" data-id="0006">
+            <a href="/"><img src="resource/filter04.png"></a>
+            <div class="listTitle">
+              <p>우유, 버터, 계란을 쓰지 않은</p>
+              <h5>[vezzly] 비건식빵</h5>
+            </div>
+            <div class="listPrice"><span>3,900원</span><a class="cart_PopUp"href="/"></a></div>
+          </li>
+        </ul>
+        <a class="gotoMarketList" href="/"><span>베이커리 </span>전체보기<span></span></a>
+      </section>
+    </div>
+    <div class="event">
+      <img src="">
+      <p>역대급 혜택! 최대 10만원 쿠폰팩</p>
+      <p>그리팅 신규가입 혜택</p>
+    </div>
+    <div class="subscribe">
+      <div class="care">
+        <p>꾸준한 관리, 더이상 어렵지 않아요</p>
+        <h2>케어식단 정기구독 <span><i class="fas fa-angle-right"></i></span>
+        </h2>
+        <ul class="subscribe_lists">
+          <li>
+            <img src="resource/subscribe01.jpg">
+            <p>세계 블루존 식사법</p>
+            <h4>장수마을식단</h4>
+          </li>
+          <li>
+            <img src="resource/subscribe02.jpg">
+            <p>당질 제한 레시피</p>
+            <h4>저당식단</h4>
+          </li>
+          <li>
+            <img src="resource/subscribe04.jpg">
+            <p>유지어터를 위한</p>
+            <h4>칼로리식단</h4>
+          </li>
+          <li>
+            <img src="resource/subscribe03.jpg">
+            <p>나만의 맞춤 건강식</p>
+            <h4>My에브리밀</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="challenge">
+        <p>건강한 라이프 스타일의 시작</p>
+        <h2>6일 완성 챌린지 식단 </h2>
+        <ul class="challenge_lists">
+          <li>
+            <img src="resource/subscribe01.jpg">
+              <p>시간이 없다 싶을 때</p>
+              <h5>뷰티핏</h5>
+              <h4 class="price">￦ 30,000(6팩)</h4>
+          </li>
+          <li>
+            <img src="resource/subscribe02.jpg">
+              <p>먹는것도 운동이에요</p>
+              <h5>프로틴업</h5>
+              <h4 class="price">￦ 42,000(6팩)</h4>
+          </li>
+          <li>
+            <img src="resource/subscribe04.jpg">
+              <p>탄수화물 줄여도 행복한</p>
+              <h5>키토</h5>
+              <h4 class="price">￦ 48,000(6팩)</h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="event">
+      <img src="">
+      <p>인기 상품이 1,000원!</p>
+      <p>그리팅 신규가입 EVENT</p>
+    </div>
+    <div class="others">
+      <section class="sale">
+        <h2>지금 사면 혜택도, 건강도 득템<span></span></h2>
+        <div></div>
+        <ul class="left">
+          <li>
+            <a href=""><img src="resource/subscribe03.jpg"></a>
+            <div class="sale_wrapper">
+              <p>5가지 버섯과 호주산 와규</p>
+              <h4>버섯듬뿍잡채</h4>
+              <div class="price">
+                <span class="cartIcon"></span>
+                <p class="fixed">8,000원</p>
+                <p class="discount">5,600원</p>
+              </div> 
+            </div>
+          </li>
+        </ul>
+        <ul class="right">
+          <li>
+            <a href="/"> <img src="resource/subscribe02.jpg"></a>
+            <div class="info">
+              <p>포화 증기 기술로 조리한</p>
+              <h4>더 부드러운 바비큐 폭립</h4>
+            </div>
+            <div class="price">
+                <p class="fixed">22,000원</p>
+                <p class="discount">18,700원</p>
+            </div>
+            <span class="cartIcon"></span>
+          </li>
+          <li>
+            <a href="/"> <img src="resource/subscribe02.jpg"></a>
+            <div class="info">
+              <p>포화 증기 기술로 조리한</p>
+              <h4>더 부드러운 바비큐 폭립</h4>
+            </div>
+            <div class="price">
+                <p class="fixed">22,000원</p>
+                <p class="discount">18,700원</p>
+            </div>
+            <span class="cartIcon"></span>
+          </li>
+          <li>
+            <a href="/"> <img src="resource/subscribe02.jpg"></a>
+            <div class="info">
+              <p>포화 증기 기술로 조리한</p>
+              <h4>더 부드러운 바비큐 폭립</h4>
+            </div>
+            <div class="price">
+                <p class="fixed">22,000원</p>
+                <p class="discount">18,700원</p>
+            </div>
+            <span class="cartIcon"></span>
+          </li>
+          <li>
+            <a href="/"> <img src="resource/subscribe02.jpg"></a>
+            <div class="info">
+              <p>포화 증기 기술로 조리한</p>
+              <h4>더 부드러운 바비큐 폭립</h4>
+            </div>
+            <div class="price">
+                <p class="fixed">22,000원</p>
+                <p class="discount">18,700원</p>
+            </div>
+            <span class="cartIcon"></span>
+          </li>
+          <li>
+            <a href="/"> <img src="resource/subscribe02.jpg"></a>
+            <div class="info">
+              <p>포화 증기 기술로 조리한</p>
+              <h4>더 부드러운 바비큐 폭립</h4>
+            </div>
+            <div class="price">
+                <p class="fixed">22,000원</p>
+                <p class="discount">18,700원</p>
+            </div>
+            <span class="cartIcon"></span>
+          </li>
+          <li>
+            <a href="/"> <img src="resource/subscribe02.jpg"></a>
+            <div class="info">
+              <p>포화 증기 기술로 조리한</p>
+              <h4>더 부드러운 바비큐 폭립</h4>
+            </div>
+            <div class="price">
+                <p class="fixed">22,000원</p>
+                <p class="discount">18,700원</p>
+            </div>
+            <span class="cartIcon"></span>
+          </li>
+        </ul>
+        <div class="saleSlider"></div>
+      </section>  
+      <section class="new">
+        <h2>깐깐하게 엄선한 신상품</h2>
+        <ul class="bestSeller_lists">
+          <li class="list" >
+            <a href="/"><img src="resource/filter01.png"></a>
+            <div class="listTitle">
+              <p>설탕 대신 조청으로 건강한 단맛</p>
+              <h5>[vezzly] 조청으로 만든 베즐리 블루베리잼</h5>
+            </div>
+            <div class="listPrice"><span>5,800원</span><a class="cart_PopUp"href="/"></a></div>
+          </li>
+          <li class="list">
+            <a href="/"><img src="resource/filter02.png"></a>
+            <div class="listTitle">
+              <p>당일 착유, 당일 생산</p>
+              <h5>[그리팅] 목장의 하루 무항생제 우유</h5>
+            </div>
+            <div class="listPrice"><span>3,320원</span><a class="cart_PopUp"href="/"></a></div>
+          </li>
+          <li class="list">
+            <a href="/"><img src="resource/filter03.png"></a>
+            <div class="listTitle">
+              <p>당일 착유한 우유로 만든</p>
+              <h5>[vezzly] 목장의 하루 우유식빵</h5>
+            </div>
+            <div class="listPrice"><span>4,420원</span><a class="cart_PopUp"href="/"></a></div>
+          </li>
+          <li class="list">
+            <a href="/"><img src="resource/filter04.png"></a>
+            <div class="listTitle">
+              <p>셀럽들의 장보기 필수품</p>
+              <h5>[그리팅X아폴리스] 쁘띠마켓 내추럴 인 가방</h5>
+            </div>
+            <div class="listPrice"><span>64,000원</span><a class="cart_PopUp"href="/"></a></div>
+          </li>
+          <li class="list">
+            <a href="/"><img src="resource/filter04.png"></a>
+            <div class="listTitle">
+              <p>셀럽들의 장보기 필수품</p>
+              <h5>[그리팅X아폴리스] 쁘띠마켓 내추럴 인 가방</h5>
+            </div>
+            <div class="listPrice"><span>64,000원</span><a class="cart_PopUp"href="/"></a></div>
+          </li>
+          <li class="list">
+            <a href="/"><img src="resource/filter04.png"></a>
+            <div class="listTitle">
+              <p>셀럽들의 장보기 필수품</p>
+              <h5>[그리팅X아폴리스] 쁘띠마켓 내추럴 인 가방</h5>
+            </div>
+            <div class="listPrice"><span>64,000원</span><a class="cart_PopUp"href="/"></a></div>
+          </li>
+          <li class="list">
+            <a href="/"><img src="resource/filter04.png"></a>
+            <div class="listTitle">
+              <p>셀럽들의 장보기 필수품</p>
+              <h5>[그리팅X아폴리스] 쁘띠마켓 내추럴 인 가방</h5>
+            </div>
+            <div class="listPrice"><span>64,000원</span><a class="cart_PopUp"href="/"></a></div>
+          </li>
+          <li class="list">
+            <a href="/"><img src="resource/filter04.png"></a>
+            <div class="listTitle">
+              <p>셀럽들의 장보기 필수품</p>
+              <h5>[그리팅X아폴리스] 쁘띠마켓 내추럴 인 가방</h5>
+            </div>
+            <div class="listPrice"><span>64,000원</span><a class="cart_PopUp"href="/"></a></div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <div></div>
+      <!--공지사항-->
+      <aside></aside>
+      <!--nav / 고객센터 -->
+      <aside></aside>
+      <!--기타사항-->
+    </footer>
+  </div>
+  <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="js/navFix.js"></script>
+  <script type="text/javascript" src="js/mainSlider.js"></script>
+  <script type="text/javascript" src="js/gnbDepth.js"></script>
+  <script type="text/javascript" src="js/mainFilter.js"></script>
+
+</body>

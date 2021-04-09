@@ -1,0 +1,79 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+/* .wrapper {
+  overflow: scroll;
+  height: 100%;
+  border: 1px solid green;
+} */
+
+header {
+  position: relative;
+  width: 1080px;
+  margin: 0 auto;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.userAccount {
+  width: 100%;
+  position: relative;
+}
+
+.userAccount ul {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.userAccount > ul > li {
+  float: left;
+  border-left: 1px solid black;
+  font-size: 0.8em;
+  color: black;
+  padding: 0 10px;
+}
+
+.userAccount ul li:first-child {
+  border-left: none;
+}
+
+.userAccount ul li:last-child::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+}
+
+.logo {
+  margin: 30px auto;
+  width: 300px;
+  height: 40px;
+}
+
+.userAccount ul li:hover {
+  color: rgb(255, 0, 0);
+}
+
+.userAccount_depth2 {
+  display: none;
+  border: 1px solid gray;
+  background-color: #fff;
+  text-align: left;
+  padding: 5px 10px;
+  transform: translate(30%, 10px);
+  z-index: 1000;
+}
+
+.userAccount_depth2.active {
+  display: block;
+}
+
+.userAccount_depth2 li {
+  float: none;
+}
+
+.userAccount_depth2 li:hover a {
+  color: rgb(181, 176, 34);
+}

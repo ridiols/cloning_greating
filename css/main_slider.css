@@ -1,0 +1,66 @@
+.main .mainSlider {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-bottom: calc(300 / 1920 * 100%);
+}
+
+.mainSlider::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.mainSlider_lists {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+}
+
+.mainSlider_lists li {
+  display: block;
+  box-sizing: content-box;
+  width: 100%;
+  height: 0;
+  /* padding-top: calc(300 / 1920 * 100%); */
+  transition: all 1s ease-in-out;
+}
+
+.mainSlider_lists li img {
+  width: 100%;
+  height: auto;
+}
+
+.mainSlider .mainSlider_buttons {
+  position: absolute;
+  z-index: 100;
+  width: 65vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.mainSlider .mainSlider_buttons button {
+  width: 30px;
+  height: 30px;
+}
+.mainSlider_buttons .mainSlider_prev {
+  background: url(../resource/slider_prev.png) no-repeat;
+  background-size: cover;
+}
+.mainSlider_buttons .mainSlider_next {
+  position: absolute;
+  right: 0;
+  background: url(../resource/slider_nextpng.png) no-repeat;
+  background-size: contain;
+}
+
+.mainSlider .mainSlider_pagination {
+  position: absolute;
+  border: 1px solid green;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

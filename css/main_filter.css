@@ -1,0 +1,100 @@
+.bestSeller {
+  width: 1080px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.bestSeller p {
+  font-size: 1.2em;
+}
+
+.bestSeller h2 {
+  font-size: 1.7em;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.bestSeller_filters {
+  overflow: hidden;
+}
+.bestSeller_filters li {
+  float: left;
+  background-color: rgb(245, 245, 245);
+  padding: 0 23px;
+  margin-right: 18px;
+  margin-top: 18px;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 23px;
+  color: #000000;
+}
+.bestSeller_filters li.active {
+  background-color: rgb(117, 157, 53);
+  color: #fff;
+}
+
+/* ----------bestSeller start----------- */
+.bestSeller_lists {
+  margin: 30px 0;
+  overflow: hidden;
+}
+.bestSeller_lists .list {
+  /* border: #585858 1px solid; */
+  width: calc((100% - 90px) / 4);
+  float: left;
+  margin-left: 30px;
+  padding: 20px 0;
+}
+.bestSeller_lists li:nth-child(4n + 1) {
+  margin-left: 0;
+}
+.bestSeller_lists .list a img {
+  width: 100%;
+  height: auto;
+}
+.listTitle {
+  height: 110px;
+  margin-top: 10px;
+}
+
+.bestSeller_lists .list p {
+  font-size: 0.85em;
+}
+
+.bestSeller_lists .list h5 {
+  font-size: 1.2em;
+  color: #2f2f2f;
+}
+
+.bestSeller_lists .listPrice {
+  display: flex;
+  justify-content: space-between;
+}
+.bestSeller_lists .listPrice span {
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.listPrice a {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: url(../resource/cart_Circle.png) no-repeat;
+  background-size: cover;
+  transform: translateY(-25%);
+}
+
+.gotoMarketList {
+  display: block;
+  text-align: center;
+  border: 1px solid #cecece;
+  width: 500px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto;
+  font-size: 1.3em;
+  color: #000000;
+  margin-bottom: 50px;
+}
