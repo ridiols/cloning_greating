@@ -159,8 +159,8 @@ textarea {
   resize: none;
 }
 a {
-  color: #919090;
   text-decoration: none;
+  color: #000;
 }
 a:link,
 a:visited {

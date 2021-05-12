@@ -1,0 +1,129 @@
+footer .notice {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background-color: rgb(147, 143, 29);
+  z-index: 100;
+}
+
+.notice_wrapper {
+  width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+footer .notice_wrapper::before,
+footer .notice_wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.notice_wrapper > div {
+  position: absolute;
+  float: left;
+  /* border: 1px solid red; */
+  top: 25%;
+}
+
+.notice_wrapper .title {
+  left: 0;
+}
+
+.notice_wrapper .notice_slider {
+  left: 90px;
+  width: 600px;
+  height: 100%;
+  padding-left: 30px;
+}
+
+.notice_wrapper .link {
+  right: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  top: 4px;
+  cursor: pointer;
+}
+
+.notices li {
+  padding-bottom: 13px;
+}
+
+.notice_wrapper a {
+  color: #fff;
+  text-decoration: none;
+}
+/*------------company start-----*/
+.company {
+  background-color: rgb(245, 245, 245);
+}
+.company_wrapper {
+  width: 1080px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.company_wrapper h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #000;
+}
+.company_wrapper h4 {
+  color: rgb(147, 143, 29);
+  font-size: 1.4em;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.company_wrapper p {
+  /* padding-top: 3px; */
+  line-height: 30px;
+  color: rgb(140, 140, 140);
+}
+
+.company_wrapper::before,
+.company_wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.company_wrapper aside {
+  float: left;
+  padding-right: 40px;
+  width: 580px;
+  box-sizing: border-box;
+}
+
+.company_wrapper aside:first-child {
+  width: 500px;
+}
+
+.company_wrapper .left .siteInfo {
+  margin-bottom: 30px;
+}
+.company_wrapper .left .siteInfo::after {
+  content: "";
+  display: block;
+  clear: left;
+  /* border: 1px solid purple; */
+}
+
+.company_wrapper .left .siteInfo li {
+  float: left;
+  border-left: 1px solid #000;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 3px;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.company_wrapper .eft .siteInfo a {
+  display: inline-block;
+}
+
+.company_wrapper .left .siteInfo li:first-child {
+  padding-left: 0px;
+  border: none;
+}

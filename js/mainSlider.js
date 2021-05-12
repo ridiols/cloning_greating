@@ -7,33 +7,31 @@ let next = document.querySelector(".mainSlider_next");
 let totalIdx = slides.length - 1; //2
 var currentIdx = 0;
 
-init(currentIdx);
+showSlide(currentIdx);
 
-prev.addEventListener("click", (event) => MoveSlide(-1));
-next.addEventListener("click", (event) => MoveSlide(1));
+prev.addEventListener("click", (event) => MoveSlide(-1), false);
+next.addEventListener("click", (event) => MoveSlide(1), false);
 
-function init(n) {
+function showSlide(n) {
   console.log("init");
   console.log(currentIdx);
-  // slides.style.transition = "all 0.4s ease-in-out";
   for (let i = 0; i < slides.length; i++) {
+    // slides[i].style.opacity = "0";
     slides[i].style.display = "none";
   }
+  // slides[i].style.opacity = "1";
   slides[n].style.display = "block";
 }
 
 function MoveSlide(n) {
+  console.log(currentIdx);
   if (n === 1 && currentIdx === totalIdx) {
-    //next
     currentIdx = 0;
   } else if (n === -1 && currentIdx === 0) {
-    //prev
     currentIdx = totalIdx;
   } else {
     currentIdx += n;
   }
-  init(currentIdx);
+  showSlide(currentIdx);
   console.log("MoveSlide", currentIdx);
 }
-
-// function TimeSlide() {}

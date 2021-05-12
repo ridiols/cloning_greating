@@ -23,8 +23,6 @@
   box-sizing: content-box;
   width: 100%;
   height: 0;
-  /* padding-top: calc(300 / 1920 * 100%); */
-  transition: all 1s ease-in-out;
 }
 
 .mainSlider_lists li img {

@@ -1,11 +1,11 @@
 .subscribe {
   width: 1080px;
-  margin: 50px auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .subscribe > p {
+  margin-top: 50px;
   font-size: 1.2em;
 }
 
@@ -54,6 +54,7 @@
   width: calc((100% - 40px) / 3);
   float: left;
   margin-left: 20px;
+  padding-bottom: 20px;
   text-align: center;
   color: #ffffff;
 }

@@ -77,3 +77,21 @@ header {
 .userAccount_depth2 li:hover a {
   color: rgb(181, 176, 34);
 }
+.fa-angle-right {
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 7px;
+  margin-right: 3px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.fa-angle-right::before {
+  display: inline-block;
+  content: "";
+  width: 22px;
+  height: 22px;
+  padding: 3px 1px 1px 1px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}

@@ -2,16 +2,13 @@
 <html>
 
 <head>
-  <title>fixNav</title>
+  <title>ScrollTEST</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
 
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="/css/header.css">
-  <link rel="stylesheet" type="text/css" href="/css/main_nav.css">
-
   
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,189 +19,130 @@
   @media screen and (max-width: 1080px) { 
     body { background-color: lightgreen; } 
   }
-  .anything{
-    width :100%;
-    height : 10000px;
-    border-color : 1px solid blue;
-    background-color: antiquewhite;
-  }
+  body {
+  background: #eee;
+}
+.h5 {
+  margin-bottom: 30px;
+}
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+.carousel {
+  background: #fff;
+  border: 2px solid #c058dc;
+  border-radius: 5px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+
+  position: relative;
+}
+.slider {
+  display: flex;
+  height: 100%;
+  width: 500%;
+  flex-shrink: 0;
+  transition: all 0.5s;
+
+}
+section {
+  flex-basis: 20%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.controls button.next {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #c058dc;
+}
+.controls button.prev {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #c058dc;
+}
+.controls button i {
+  font-size: 50px;
+}
+
+
+
+
+/*   -------My SLider CSS -------*/
+
+.containerTest{
+  width: 100%;
+  height: 50px;
+  background-color: #c058dc;
+}
+
+.carouselTest{
+  height: 50px;
+  padding-left: 30px;
+  border: 1px solid green;
+  /* overflow-y: hidden; */
+  position: relative;
+}
+.slideTest{
+  position: relative;
+  /* top : 12px; */
+  height: 500%;
+  transition: all 1s;
+  /* transform: (translateY(calc(-20% + 15px))); */
+}
+.slideTest li{
+  margin-top: 12.5px;
+  color: #fff;
+}
   </style>
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-      <div class="userAccount">
-        <ul>
-          <li><a href="/">로그인</a></li>
-          <li><a href="/">회원가입</a></li>
-          <li><a href="/">쿠폰등록</a></li>
-          <li>
-            <a href="/">고객센터</a>
-            <ul class="userAccount_depth2">
-              <li><a href="/">공지사항</a></li>
-              <li><a href="/">자주하는 질문</a></li>
-              <li><a href="/">1:1 문의</a></li>
-              <li><a href="/">고객의 소리</a></li>
-            </ul>
-          </li>
-        </ul>
+  <div class="container">
+    <div class="h5">Circular carousel (infinite)</div>
+    <div class="carousel">
+      <div class="slider">
+        <section>Content section 1</section>
+        <section>Content section 2</section>
+        <section>Content section 3</section>
+        <section>Content section 4</section>
+        <section>Content section 5</section>
       </div>
-      <div class="logo">
-        <a href="/"><img src="resource/logo.png" alt="logo"></a>
+      <div class="controls">
+        <button class="next"><i class="material-icons">keyboard_arrow_right </i></button>
+        <button class="prev"><i class="material-icons"> keyboard_arrow_left</i></button>
       </div>
-    </header>
-    <div class="nav_wrapper">
-      <nav>
-        <div class="gnb depth1">
-          <div>
-              <span class="gnbIcon">
-                <span class="gnbIcon_line"></span>
-                <span class="gnbIcon_line"></span>
-                <span class="gnbIcon_line"></span>
-              </span>
-              <span><a href="/" class="category">카테고리</a></span>
-          </div>
-          <div class="depth2">
-              <div class="menu_1">
-                <a class="menu_title" href="/" >케어식단</a>
-                <ul>
-                  <li>
-                    <a href="/">정기식단</a>
-                    <ul class="depth3">
-                      <li><a href="/">저당식단</a></li>
-                      <li><a href="/">칼로리식단</a></li>
-                      <li><a href="/">장수마을식단</a></li>
-                      <li><a href="/">마이그리팅</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="/">챌린지식단</a>
-                    <ul class="depth3">
-                      <li><a href="/">뷰티핏</a></li>
-                      <li><a href="/">키토</a></li>
-                      <li><a href="/">프로틴업</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="menu_2">
-                <a class="menu_title" href="/" >건강마켓</a>
-                <ul>
-                  <li>
-                    <a href="/">건강반찬</a>
-                    <ul class="depth3">
-                      <li><a href="/">메인요리</a></li>
-                      <li><a href="/">밀키트</a></li>
-                      <li><a href="/">밑반찬</a></li>
-                      <li><a href="/">나물</a></li>
-                      <li><a href="/">면/파스타</a></li>
-                      <li><a href="/">키즈</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="/">밥/국</a>
-                    <ul class="depth3">
-                      <li><a href="/">밥</a></li>
-                      <li><a href="/">국</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="/">샐러드</a>
-                    <ul class="depth3">
-                      <li><a href="/">350k</a></li>
-                      <li><a href="/">페스토/비건</a></li>
-                      <li><a href="/">단백질</a></li>
-                      <li><a href="/">웨이트</a></li>
-                      <li><a href="/">그랩샐러드</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="/">죽/스프</a>
-                    <ul class="depth3">
-                      <li><a href="/">죽</a></li>
-                      <li><a href="/">스프</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="/">소스/양념</a>
-                    <ul class="depth3">
-                      <li><a href="/">소금/식초</a></li>
-                      <li><a href="/">기름/오일</a></li>
-                      <li><a href="/">소스/드레싱</a></li>
-                      <li><a href="/">장류</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="/">베이커리</a>
-                    <ul class="depth3">
-                      <li><a href="/">빵</a></li>
-                      <li><a href="/">버터/치즈</a></li>
-                      <li><a href="/">잼/시럽</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="/">건강음료</a>
-                  </li>
-                  <li>
-                    <a href="/">간편식/간식</a>
-                    <ul class="depth3">
-                      <li><a href="/">식사대용</a></li>
-                      <li><a href="/">커피/차/음료</a></li>
-                      <li><a href="/">캔디/쿠키</a></li>
-                      <li><a href="/">영양간식</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="/">연화식</a>
-                    <ul class="depth3">
-                      <li><a href="/">고기</a></li>
-                      <li><a href="/">생선</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="/">1Table</a>
-                  </li>
-                  <li>
-                    <a href="/">비건/라이프</a>
-                    <ul class="depth3">
-                      <li><a href="/">비건</a></li>
-                      <li><a href="/">라이프</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="/">스페셜 패키지</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="menu_3">
-                <ul>
-                  <li><a href="/">신상품</a></li>
-                  <li><a href="/">베스트</a></li>
-                </ul>
-              </div>
-          </div>   
-        </div>
-        <ul class="navigation">
-          <li><a href="/">케어식단</a></li>
-          <li><a href="/">건강마켓</a></li>
-          <li><a href="/">기획전</a></li>
-          <li><a href="/">이벤트</a></li>
-          <li><a href="/">스토리</a></li>
-        </ul>
-        <div class="search">
-          <a href="#" class="searchIcon">
-            <img src="resource/iconfinder_search_1608826.png">
-          </a>
-          <a href="#" class="cartIcon">
-            <img src="resource/iconfinder_shopping-cart_2561279.png" alt="cartIcon">
-          </a>
-        </div>
-      </nav>
-    </div>
-    <div class="anything">
     </div>
   </div>
-  <script type="text/javascript" src="js/navFix.js"></script>
+
+  <div class="containerTest">
+    <div class="carouselTest">
+      <div class="slideTest">
+        <li>TestVerticalSlider01</li>
+        <li>TestVerticalSlider02</li>
+        <li>TestVerticalSlider03</li>
+        <li>TestVerticalSlider04</li>
+        <li>TestVerticalSlider05</li>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="js/testSlider.js"></script>
 </body>
 </html>

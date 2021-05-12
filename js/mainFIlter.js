@@ -2,36 +2,72 @@
 
 let filter = document.querySelectorAll(".bestSeller_filter"); //ul lists 선택기준
 var filter_check = false;
-// --------
-let filter_list = document.querySelectorAll(".bestSeller_lists .list"); // li lists 선택대상
+
+var best_list = $(".bestSeller .bestSeller_lists .list");
 
 $(".bestSeller_filters").on("click", ".bestSeller_filter", function () {
   $(this).siblings().removeClass("active");
+  console.log("filterColor");
   $(this).addClass("active");
+
+  //get category datai-id
+  let filterNum = $(this).data("id");
+  console.log(filterNum);
+  best_list
+    .hide()
+    .filter(function () {
+      return $(this).data("id") === filterNum;
+    })
+    .show();
+
+  function init(filterNum) {
+    let first_filterButton = document.querySelector(".bestSeller_filters")
+      .firstChild;
+    console.log("filter_init_done");
+    console.log(first_filterButton.classList);
+    showCategoryName(filterNum);
+  }
+
+  init("0001");
+
+  function showCategoryName(filterNum) {
+    switch (filterNum) {
+      case "0001":
+        $(".bestSeller_togo").html("건강반찬");
+        break;
+      case "0002":
+        $(".bestSeller_togo").html("밥/국");
+        break;
+      case "0003":
+        $(".bestSeller_togo").html("샐러드");
+        break;
+      case "0004":
+        $(".bestSeller_togo").html("죽/스프");
+        break;
+      case "0005":
+        $(".bestSeller_togo").html("소스/양념");
+        break;
+      case "0006":
+        $(".bestSeller_togo").html("베이커리");
+        break;
+      case "0007":
+        $(".bestSeller_togo").html("건강음료");
+        break;
+      case "0008":
+        $(".bestSeller_togo").html("간편식/간식");
+        break;
+      case "0009":
+        $(".bestSeller_togo").html("연화식");
+        break;
+      case "0010":
+        $(".bestSeller_togo").html("1Table");
+        break;
+      case "0011":
+        $(".bestSeller_togo").html("비건/라이프");
+        break;
+      case "0012":
+        $(".bestSeller_togo").html("스페셜패키지");
+        break;
+    }
+  }
 });
-
-if ($(".list").data("id") === "0006") {
-  //true
-  $(".list").data("id") === "0006";
-}
-$(".bestSeller_lists")
-  .find($(".list").data("id") === "0006")
-  .css("diplay", "none");
-
-// filter_list.onClick = (t) => {
-//   let filterNumber = t.dataset.id;
-//   console.log(filterNumber);
-// };
-
-// function getFilter(e) {
-//   let filterNumber = this.dataset.id;
-//   console.log(filterNumber);
-// }
-
-/* 
-1. 버튼을 누르면 매개변수 값으로 데이터 값이 전달되는 함수가 실행됨 
-2. 리스트의 << DOM. li 
- 데이터 아이디에 접근하는 배열을 만들어 매개변수와 동일한지 검사
-3. 해당하는 조건의 새로운 배열을 생성 
-4. 그 배열을 
-*/

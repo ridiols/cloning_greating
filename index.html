@@ -17,9 +17,15 @@
   <link rel="stylesheet" type="text/css" href="css/event.css">
   <link rel="stylesheet" type="text/css" href="css/subscribe.css">
   <link rel="stylesheet" type="text/css" href="css/sale.css">
+  <link rel="stylesheet" type="text/css" href="css/youtube.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  
+  
+  
 
-
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
@@ -229,14 +235,14 @@
           <li class="bestSeller_filter" data-id="0006">베이커리</li>
           <li class="bestSeller_filter" data-id="0007">건강음료</li>
           <li class="bestSeller_filter" data-id="0008">간편식/간식</li>
-          <li class="bestSeller_filter">연화식</li>
-          <li class="bestSeller_filter">1Table</li>
-          <li class="bestSeller_filter">비건/라이프</li>
-          <li class="bestSeller_filter">스페셜 패키지</li>
+          <li class="bestSeller_filter" data-id="0009">연화식</li>
+          <li class="bestSeller_filter" data-id="0010">1Table</li>
+          <li class="bestSeller_filter" data-id="0011">비건/라이프</li>
+          <li class="bestSeller_filter" data-id="0012">스페셜 패키지</li>
         </ul>
         <ul class="bestSeller_lists">
-          <li class="list" data-id="0001">
-            <a href="/"><img src="resource/filter01.png"></a>
+          <li class="list active" data-id="0001">
+            <a href="/"><img src="resource/filter05.png"></a>
             <div class="listTitle">
               <p>국산콩 100%로 만든 콩비지</p>
               <h5>목살 듬뿍 비지찌개(2인분)</h5>
@@ -244,7 +250,7 @@
             <div class="listPrice"><span>12,000원</span><a class="cart_PopUp"href="/"></a></div>
           </li>
           <li class="list" data-id="0001">
-            <a href="/"><img src="resource/filter02.png"></a>
+            <a href="/"><img src="resource/filter06.png"></a>
             <div class="listTitle">
               <p>No 설탕, 카라멜색소, MSG</p>
               <h5>3無 볶음 쟁반 짜장면</h5>
@@ -252,7 +258,7 @@
             <div class="listPrice"><span>6,800원</span><a class="cart_PopUp"href="/"></a></div>
           </li>
           <li class="list" data-id="0001">
-            <a href="/"><img src="resource/filter03.png"></a>
+            <a href="/"><img src="resource/filter07.png"></a>
             <div class="listTitle">
               <p>국내산 재료로 만든 김치</p>
               <h5>동물복지 돼지고기 듬뿍 김치찌개(2인분)</h5>
@@ -260,15 +266,13 @@
             <div class="listPrice"><span>11,000원</span><a class="cart_PopUp"href="/"></a></div>
           </li>
           <li class="list" data-id="0001">
-            <a href="/"><img src="resource/filter04.png"></a>
+            <a href="/"><img src="resource/filter08.png"></a>
             <div class="listTitle">
               <p>국내산 계란으로 건강하게</p>
               <h5>계란폭탄 참치&소고기 키토 김밥 키트</h5>
             </div>
             <div class="listPrice"><span>11,700원</span><a class="cart_PopUp"href="/"></a></div>
           </li>
-
-
 
           <li class="list" data-id="0006">
             <a href="/"><img src="resource/filter01.png"></a>
@@ -303,71 +307,81 @@
             <div class="listPrice"><span>3,900원</span><a class="cart_PopUp"href="/"></a></div>
           </li>
         </ul>
-        <a class="gotoMarketList" href="/"><span>베이커리 </span>전체보기<span></span></a>
+        <a class="gotoMarketList" href="/"><span class="bestSeller_togo"></span> 전체보기<span></span></a>
       </section>
     </div>
     <div class="event">
-      <img src="">
-      <p>역대급 혜택! 최대 10만원 쿠폰팩</p>
-      <p>그리팅 신규가입 혜택</p>
-    </div>
+      <div class ="slick-slider">
+        <div class="slick-list" aria-hidden="false">
+          <a class="slick-current" href="#">
+            <p><strong>역대급 혜택! 최대 10만원 쿠폰팩</strong></p>
+            <p>그리팅 신규가입 혜택</p>
+          </a>
+        </div>
+      </div>  
+    </div>    
     <div class="subscribe">
-      <div class="care">
+      <!-- <div class="care"> -->
         <p>꾸준한 관리, 더이상 어렵지 않아요</p>
         <h2>케어식단 정기구독 <span><i class="fas fa-angle-right"></i></span>
         </h2>
         <ul class="subscribe_lists">
           <li>
-            <img src="resource/subscribe01.jpg">
+            <img src="resource/subscribe01.png">
             <p>세계 블루존 식사법</p>
             <h4>장수마을식단</h4>
           </li>
           <li>
-            <img src="resource/subscribe02.jpg">
+            <img src="resource/subscribe04.png">
             <p>당질 제한 레시피</p>
             <h4>저당식단</h4>
           </li>
           <li>
-            <img src="resource/subscribe04.jpg">
+            <img src="resource/subscribe03.png">
             <p>유지어터를 위한</p>
             <h4>칼로리식단</h4>
           </li>
           <li>
-            <img src="resource/subscribe03.jpg">
+            <img src="resource/subscribe02.png">
             <p>나만의 맞춤 건강식</p>
             <h4>My에브리밀</h4>
           </li>
         </ul>
-      </div>
-      <div class="challenge">
+      <!-- </div> -->
+      <!-- <div class="challenge"> -->
         <p>건강한 라이프 스타일의 시작</p>
-        <h2>6일 완성 챌린지 식단 </h2>
+        <h2>6일 완성 챌린지 식단 <i class="fas fa-angle-right"></i></h2>
         <ul class="challenge_lists">
           <li>
-            <img src="resource/subscribe01.jpg">
+            <img src="resource/subscribe_2_01.png">
               <p>시간이 없다 싶을 때</p>
               <h5>뷰티핏</h5>
               <h4 class="price">￦ 30,000(6팩)</h4>
           </li>
           <li>
-            <img src="resource/subscribe02.jpg">
+            <img src="resource/subscribe_2_02.png">
               <p>먹는것도 운동이에요</p>
               <h5>프로틴업</h5>
               <h4 class="price">￦ 42,000(6팩)</h4>
           </li>
           <li>
-            <img src="resource/subscribe04.jpg">
+            <img src="resource/subscribe_2_03.png">
               <p>탄수화물 줄여도 행복한</p>
               <h5>키토</h5>
               <h4 class="price">￦ 48,000(6팩)</h4>
           </li>
         </ul>
-      </div>
+      <!-- </div> -->
     </div>
     <div class="event">
-      <img src="">
-      <p>인기 상품이 1,000원!</p>
-      <p>그리팅 신규가입 EVENT</p>
+      <div class ="slick-slider">
+        <div class="slick-list" aria-hidden="false">
+          <a class="slick-current" href="#">
+            <p><strong>인기 상품이 1,000원!</strong></p>
+            <p>그리팅 신규가입 EVENT</p>
+          </a>
+        </div>
+      </div>  
     </div>
     <div class="others">
       <section class="sale">
@@ -464,7 +478,7 @@
         <div class="saleSlider"></div>
       </section>  
       <section class="new">
-        <h2>깐깐하게 엄선한 신상품</h2>
+        <h2>깐깐하게 엄선한 신상품 <i class="fas fa-angle-right"></i></h2>
         <ul class="bestSeller_lists">
           <li class="list" >
             <a href="/"><img src="resource/filter01.png"></a>
@@ -532,20 +546,116 @@
           </li>
         </ul>
       </section>
+      <section class="info">
+        <h2>아는 만큼 건강해져요 <i class="fas fa-angle-right"></i></h2>
+        <div class="slider">
+          <ul class="sliders">
+            <li><a></a></li>
+            <li><a></a></li>
+            <li><a></a></li>
+            <li><a></a></li>
+          </ul>
+          <div class="slider_buttons">
+            <div class="left"><i style="color:#ccc" class="fas fa-angle-left"></i></div>
+            <div class="right"><i style="color:#ccc" class="fas fa-angle-right"></i></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="youtube">
+      <div class="youtube_wrapper">
+        <div class="left">
+          <div class="title">
+            <a href="#"><strong>그리팅 TV <i class="fas fa-angle-right"></i> </strong></a>
+          </div>
+          <div class="content">
+            <h4>그리팅 쌀믈리에가 추천하는 품종 3종</h4>
+            <p>이제, 쌀도 품종 보고 고르세요!</p>
+          </div>
+          <div class="link">
+            <a href="#">그리팅 유투브채널 구독하기 <i class="fas fa-angle-right"></i> </a>
+          </div>
+        </div>
+        <div class="right">
+          <a href="#"><img src="resource/mainSlider02.png"></a>
+        </div>
+      </div>
     </div>
     <footer>
-      <div></div>
+      <div class="notice">
+        <div class="notice_wrapper">
+          <div class="title">공지사항</div>
+          <div class="notice_slider">
+            <ul class="notices">
+              <li><a>[당첨자발표] OK 캐쉬백 선착순 회원가입 이벤트 당첨자 발표 </a></li>
+              <li><a>[당첨자발표] 그리팅 1주년 이벤트 경품 당첨자 발표</a></li>
+              <li><a>[당첨자발표] 계란 폭탄 키토김밥 Kit 포토 후기 이벤트 당첨자 발표</a></li>
+              <li><a>[회원] 멤버십 혜택 개편 안내(2021년 3월 1일 부터)</a></li>
+              <li><a>[공지] 개인정보 처리방침 변경 안내</a></li>
+            </ul>
+          </div>
+          <div class="link"><a href="#">+</a></div>
+        </div>
+      </div>
       <!--공지사항-->
-      <aside></aside>
-      <!--nav / 고객센터 -->
-      <aside></aside>
+      <div class="company">
+        <div class="company_wrapper">
+          <aside class="left">
+            <ul class="siteInfo">
+              <li><a>회사소개</a></li>
+              <li><a>이용약관</a></li>
+              <li><a><strong>개인정보처리방침</strong></a></li>
+              <li><a>멤버십 프로그램</a></li>
+            </ul>
+            <div class="support">
+              <h2>고객센터</h2>
+              <h4>1800-0700</h4>
+              <p>평일, 토요일 7:00~18:00</p>
+              <p>공휴일 7시 ~ 13시 (일요일 휴무)</p>
+              <p>카카오톡 <a href=""><span>@그리팅</span></a> 친구 추가하고 소식과 혜택을 받아보세요</p>
+            </div>
+            <div class="snsBox">
+              <ul>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+              </ul>
+            </div>
+          </aside>
+          <!--nav / 고객센터 -->
+          <aside class="right">
+            <div class="siteMap">
+
+            </div>
+            <div class="company">
+              <h2>00그린푸드</h2>
+              <p>대표이사 : 000 | 사업장소재지:경기도 용인시 OO구 OO로 000(동천동) OO푸드닷컴</p>
+              <p>사업자등록번호 : 211-81-00000<a href=""><span> [사업자정보확인]</span></a></p>
+              <p>통신판매신고번호 : 제 2011-0000-0000 호</p>
+              <p>개인정보보호책임자 : 홍길동 | 개인정보 관리 이메일 :</p>
+              <p>000000@00greenfood.com</p>
+              <p>호스팅 서비스 사업자 : (주)00그린푸드 </p>
+              <p><a href=""><span>[에스크로 서비스 가입사실 확인]</span></a></p>
+              <p>Copyright © 2020 YoonjiHong.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
       <!--기타사항-->
     </footer>
   </div>
+
   <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
   <script type="text/javascript" src="js/navFix.js"></script>
   <script type="text/javascript" src="js/mainSlider.js"></script>
   <script type="text/javascript" src="js/gnbDepth.js"></script>
   <script type="text/javascript" src="js/mainFilter.js"></script>
+  <script type="text/javascript" src="js/footerSlider.js"></script>
+  <script type="text/javascript" src="js/infoSlider.js"></script>
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 
 </body>

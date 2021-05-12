@@ -4,6 +4,7 @@ var prevScrollY = window.pageYOffset;
 
 var nav = document.querySelector(".nav_wrapper");
 var html = document.documentElement;
+var eventImg01 = document.querySelector(".event01");
 
 window.addEventListener("scroll", function (e) {
   var currentScrollY =
@@ -13,9 +14,14 @@ window.addEventListener("scroll", function (e) {
   } else {
     nav.classList.remove("fixed");
   }
-  prevScrollY = currentScrollY;
-});
 
-nav.addEventListener("click", function () {
-  console.log("JS is connected");
+  // if (currentScrollY < 800) {
+  //  eventImg01.style.display = none;
+  // } else if(currentScrollY >= 800){
+  //   eventImg01.style.display = block;
+
+  // } else if() {
+
+  // }
+  prevScrollY = currentScrollY;
 });

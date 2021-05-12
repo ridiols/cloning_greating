@@ -1,7 +1,6 @@
 .others {
   width: 1080px;
   margin: 0 auto;
-  padding: 50px 0;
   margin-bottom: 50px;
 }
 
@@ -147,4 +146,44 @@
 
 .others .new {
   padding-top: 50px;
+}
+
+/*---------info START-------*/
+
+.others .info {
+}
+
+.others .info .slider {
+  overflow: hidden;
+}
+
+.others .info .sliders::before,
+.others .info .sliders::after {
+  content: "";
+  clear: both;
+}
+
+.others .info .sliders {
+  width: 1600px;
+}
+
+.others .info .sliders li {
+  float: left;
+  display: block;
+  width: 400px;
+  height: 120px;
+  background: url(../resource/infoSlider.png) no-repeat;
+}
+
+.others .info .sliders li:nth-child(2) {
+  background-position: 0 33.3%;
+}
+
+.others .info .sliders li:nth-child(3) {
+  border: 1px solid blue;
+  background-position: 0 66.66%;
+}
+
+.others .info .sliders li:nth-child(4) {
+  background-position: center 99.99%;
 }
